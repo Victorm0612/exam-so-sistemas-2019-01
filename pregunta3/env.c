@@ -16,6 +16,7 @@ int main (int argc, char** argv)
 	char argumentos[60];
 	strcpy(argumentos, "/");
 	strcat(argumentos, argv[1]);
+        char *comando=argv[1];
 	char *path_dividido;
 	char programa[100];
        	char *path = getenv("PATH");
@@ -28,8 +29,8 @@ int main (int argc, char** argv)
 		strcat(programa, argumentos);
                 if(access(programa, F_OK) != -1 ) 
 		{ 
-                        char *const todo[]={argv[1],NULL};
-                        execvp(todo[0],argv);                        
+                        char *const cmd[]={comando,NULL};
+                        execvp(cmd[0],cmd);                        
                    	flag++;
 		}
 		path_dividido = strtok (NULL, ":");
