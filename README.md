@@ -27,3 +27,10 @@ gcc -pthread threads_escenario2.c -o threads_escenario2 && ./threads_escenario2 
 
 Finalmente, los tiempos observados en ambos escenarios pueden deberse al echo de que el programa tiene que 
 cerrar o abrir la puerta. Cuando el programa abre y cierra la puerta una sola vez, como en el escenario uno, requiere un tiempo total menor al escenario dos, que abre y cierra la puerta cada vez que se itera, lo cual es un desgaste computacional.
+
+
+### Pregunta 2:
+
+´´´
+gcc threads.c -pthread -o threads && ./threads
+´´´
