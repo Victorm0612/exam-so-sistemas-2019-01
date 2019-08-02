@@ -33,4 +33,12 @@ cerrar o abrir la puerta. Cuando el programa abre y cierra la puerta una sola ve
 
 ´´´
 gcc threads.c -pthread -o threads && ./threads
+
+´´´
+
+### Pregunta 3:
+
+´´´
+gcc env.c -o env && ./env
+
 ´´´
